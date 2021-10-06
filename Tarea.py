@@ -24,7 +24,7 @@ numero2 = (int(input("Ingrese el numero 2: ")))
 
 division = numero1/numero2
 
-print("El resultado de la division es: ",division)\
+print("El resultado de la division es: ",division)
 
 
 numero = int(input("Ingrese un numero: "))
@@ -34,8 +34,8 @@ def numeroPrimo(numero):
     contador=0
     resultado=True
 
-    for i in range (1, numero+1):
-        if(numero/i==0):
+    for divisor in range (1, numero+1):
+        if(numero/divisor==0):
             contador+=1
         if(contador>2):
             resultado=False
